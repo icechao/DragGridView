@@ -291,7 +291,7 @@ public class DragGridView extends GridView {
      */
     private void exchangItem(MotionEvent ev) {
         int newDragItemIndex = pointToPosition((int) ev.getX(), (int) ev.getY());
-        if (newDragItemIndex != -1 && newDragItemIndex != AdapterView.INVALID_POSITION && newDragItemIndex != dragItemIndex) {
+        if (newDragItemIndex != -1 && newDragItemIndex != AdapterView.INVALID_POSITION) {
 
             if (onExchangeListener != null && newDragItemIndex != dragItemIndex) {
                 onExchangeListener.onExchange(dragItemIndex, newDragItemIndex);
